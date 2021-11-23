@@ -5,7 +5,9 @@ import 'animate.css';
 import './App.css';
 import Header from './components/HomePageComponents/Header';
 import CanvasView from './components/HomePageComponents/3Dview';
-import AboutMe from './components/HomePageComponents/AboutMe';
+import AboutMe from './components/HomePageComponents/Aboutomponents/AboutMe';
+import Experience from './components/HomePageComponents/ExperienceComponents/Experience';
+import Works from './components/HomePageComponents/WorksComponents/Works';
 
 
 const Loader = () => {
@@ -41,6 +43,14 @@ function App() {
       <div className="abouts_section">
         <ScrollAnimation animateIn="animate__fadeIn">
           <AboutMe />
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="animate__fadeIn">
+          <Experience />
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="animate__fadeIn">
+          <Works />
         </ScrollAnimation>
       </div>
     </div>

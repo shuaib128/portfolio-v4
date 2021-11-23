@@ -16,11 +16,23 @@ body {
   font-family: var(--main-font-family);
   background: var(--main-bg-color);
   color: var(--main-font-color);
+  scroll-behavior: smooth;
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .full_website{
   height: 100vh !important;
   overflow: hidden !important;
+}
+
+ul{
+  padding: 0;
 }
 
 li{
@@ -29,6 +41,10 @@ li{
 
 h1, h2, h3, p{
   margin: 0;
+}
+
+p{
+  word-spacing: 1px;
 }
 
 a {
@@ -51,9 +67,9 @@ a {
 }
 
 .abouts_section{
-  width: 70%;
+  width: 100%;
   margin: 0px auto;
-  margin-top: 200px;
+  margin-top: 262px;
 }
 
 .header{
@@ -123,6 +139,8 @@ a {
 
 .about_section{
   padding-bottom: 40px;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .its_me{
@@ -161,6 +179,8 @@ a {
 
 .me_description{
   margin-top: 20px;
+  line-height: 1.5;
+  word-spacing: 1px;
 }
 
 .i_build{
@@ -178,7 +198,7 @@ a {
 }
 
 .social_icons{
-  margin-top: 13px;
+  margin-top: 23px;
 }
 
 .social_icons a{
@@ -241,9 +261,9 @@ a {
 
 .ham-box-inner{
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 0px;
-  width: 30px;
+  width: 26px;
   height: 2px;
   border-radius: 4px;
   background-color: var(--second-font-color);
@@ -255,7 +275,7 @@ a {
   position: absolute;
   top: 17%;
   right: 0px;
-  width: 35px;
+  width: 31px;
   height: 2px;
   border-radius: 4px;
   background-color: var(--second-font-color);
@@ -265,9 +285,9 @@ a {
 
 .ham-box-inner3{
   position: absolute;
-  top: 85%;
+  top: 73%;
   right: 0px;
-  width: 25px;
+  width: 21px;
   height: 2px;
   border-radius: 4px;
   background-color: var(--second-font-color);
@@ -372,4 +392,199 @@ a {
 canvas {
   outline: none;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+}
+
+.about_detail_image{
+  display: flex;
+}
+
+.about_details{
+  width: 70%;
+  padding-right: 35px;
+}
+
+
+.about_image{
+  width: 30%;
+  position: relative;
+  top: 43px;
+  z-index: 1;
+}
+
+.about_image::after{
+  content: "";
+  border: 2px solid var(--second-font-color);
+  top: 20px;
+  left: 20px;
+  z-index: -1;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.skillsets{
+  margin-top: 20px;
+}
+
+.skillsethrader{
+  
+}
+
+.skillsetUP{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 335px;
+  margin-top: 21px;
+}
+
+.skillsetUP li{
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: var(--second-font-family);
+}
+
+.skillsetUP li::before{
+  content: "▹";
+  left: 0px;
+  color: var(--second-font-color);
+  font-size: 12px;
+  line-height: 12px;
+  margin-right: 10px;
+}
+
+.experience_section{
+  margin: 60px auto;
+  width: 60%;
+  padding: 40px 0px;
+}
+
+.experience_block{
+  display: flex;
+}
+
+
+.experience_block_button{
+  width: 25%;
+  padding-right: 15px;
+  border-left: 2px solid #434344;
+  position: relative;
+  height: fit-content;
+}
+
+.stickIndicator{
+  height: 40px;
+  width: 2px;
+  background: var(--second-font-color);
+  position: absolute;
+  left: -2px;
+  transition: var(--transition);
+}
+
+.experience_block_button button{
+  width: 100%;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 5px;
+  color: var(--main-font-color);
+  border: none;
+  text-align: left;
+  font-family: var(--second-font-family);
+  padding-left: 18px;
+  background: transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.experience_block_button button:hover{
+  background: #282b30;
+  color: var(--second-font-color);
+}
+
+
+.experience_block_inner{
+  width: 75%;
+  margin-left: 10px;
+}
+
+.experience_block_button button.activeTab{
+  background: #282b30;
+  color: var(--second-font-color);
+}
+
+.closeDesBox{
+  display: none;
+}
+
+.openDesBox{
+  display: block;
+}
+
+#desSkill{
+  line-height: 1.5;
+  word-spacing: 2px;
+}
+
+.desTitle{
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.desTitle span{
+  color: var(--second-font-color);
+  font-weight: 800;
+}
+
+.works_section{
+  margin: 60px auto;
+  padding: 40px 0px;
+  width: 80%;
+}
+
+.works{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+}
+
+
+.work{
+  background: rgb(255 255 255 / 8%);
+  margin-bottom: 15px;
+  height: fit-content;
+  border-radius: 5px;
+  padding: 27px 25px;
+}
+
+
+.file_github_diret_link{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title_project{
+  color: var(--second-font-color);
+  margin-top: 25px;
+  margin-bottom: 12px;
+}
+
+
+.exe_project{
+  color: #c9c9c9;
+}
+
+.cats{
+  margin-top: 25px;
+}
+
+.ct{
+  display: inline-flex;
+  font-size: 13px;
+  margin-right: 10px;
+  color: #dcdcdc;
+  font-family: var(--second-font-family);
 }
