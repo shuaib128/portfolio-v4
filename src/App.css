@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
-}
+@media screen and (max-width: 900px){
+  .nav_side{
+      display: none;
+  }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .hidden_nav{
+      display: block;
+  }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .header{
+      padding: 15px 30px;
+  }
+
+  .logo_side{
+      margin-top: 10px;
+  }
+
+  .canvsView {
+      height: 387px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+
+@media screen and (max-width: 500px){
+  .hiddenbuttonPadd{
+      width: 70vw;
+  }
+
+  .hiddenbuttonPaddOpen{
+      width: 70vw;
+  }
+
+  .canvsView{
+      width: 90%;
+  }
+
+  .its_me {
+      font-size: 15px;
+      background: rgb(255 255 255 / 8%);
+      width: 90%;
+      margin: 5px auto;
+      padding: 17px 20px;
+  }
+
+  .i_build {
+      font-size: clamp(30px, 2vw, 30px);
+      width: 90%;
+      margin: 0 auto;
+      margin-top: 10px;
+  }
+
+  .abouts_section {
+      width: 90%;
+  }
+
+  .about_me {
+      font-size: 22px;
+      margin: 45px 0px 30px;
+  }
+
+  .name {
+      font-size: 1.90rem;
+  }
+
+  .header {
+      padding: 15px 17px;
+  }
+
+  .about_me{
+      margin-top: 79%;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+@media screen and (max-width: 500px){
+  .canvsView {
+      width: 100%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+  
 }
