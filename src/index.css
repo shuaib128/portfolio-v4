@@ -45,6 +45,7 @@ h1, h2, h3, p{
 
 p{
   word-spacing: 1px;
+  color: var(--main-font-color);
 }
 
 a {
@@ -557,6 +558,9 @@ canvas {
   height: fit-content;
   border-radius: 5px;
   padding: 27px 25px;
+  cursor: pointer;
+  transition: .3s;
+  position: relative;
 }
 
 
@@ -567,14 +571,19 @@ canvas {
 }
 
 .title_project{
-  color: var(--second-font-color);
+  color: rgb(255 255 255 / 92%);
   margin-top: 25px;
   margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: .3s;
 }
 
 
 .exe_project{
   color: #c9c9c9;
+  font-size: 15px;
+  line-height: 1.3;
 }
 
 .cats{
@@ -587,4 +596,117 @@ canvas {
   margin-right: 10px;
   color: #dcdcdc;
   font-family: var(--second-font-family);
+}
+
+.work:hover{
+  transform: translateY(-7px);
+}
+
+.work:hover > .title_project{
+  color: var(--second-font-color);
+}
+
+.workDetail{
+  margin: 0 auto;
+  width: 70%;
+  padding-bottom: 70px;
+}
+
+.workdesBreadcrum{
+  display: flex;
+}
+
+.to-work{
+  margin: 0 10px;
+}
+
+.current_page_name{
+  color: var(--second-font-color);
+}
+
+.current_page_project_name{
+  font-size: 19px;
+  position: relative;
+  top: -2px;
+  font-weight: 700;
+}
+
+.stack_blocks{
+  margin-top: 22px;
+}
+
+.stack_block{
+  display: flex;
+  margin-bottom: 7px;
+}
+
+.which_platform{
+  font-size: 14px;
+  background: var(--second-font-color);
+  color: black;
+  padding: 4px;
+  font-weight: 600;
+}
+
+.type_platform{
+  margin-left: 11px;
+}
+
+.type_platform_a{
+  color: lightskyblue;
+}
+
+.type_platform_a:hover{
+  border-bottom: 1px solid lightskyblue;
+}
+
+.work_detail_des{
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.work_detail_des p{
+  
+}
+
+.work_detail_des ul{
+  padding-left: 20px;
+}
+
+.work_detail_des ul li{
+  list-style-type: circle
+}
+
+.work_detail_des img{
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.images__work{
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.images__work img{
+  width: 100%;
+  height: 450px;
+  margin-top: 0px;
+}
+
+.footer_section{
+  margin-bottom: 40px;
+}
+
+.footer_section p{
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  width: 90%;
 }

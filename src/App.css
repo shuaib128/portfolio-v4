@@ -45,6 +45,14 @@
     .works{
         grid-template-columns: 1fr 1fr;
     }
+
+    .workDetail{
+        width: 80%;
+    }
+
+    .work_detail_des img{
+        height: 43vw;
+    }
 }
 
 
@@ -133,6 +141,22 @@
    .experience_block_inner{
        margin: 0px;
    }
+
+   .workDetail {
+        width: 92%;
+    }
+
+    .work_detail_des img, .images__work{
+        width: 100%;
+    }
+
+    .work_detail_des img{
+        height: 59vw;
+    }
+
+    .images__work img{
+        height: 70vw;
+    }
 }
 
 
@@ -161,5 +185,6 @@
 
     .works_section{
         width: 97%;
+        padding: 5px 0px;
     }
 }

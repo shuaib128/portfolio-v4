@@ -56,13 +56,13 @@ const HTMLContent = () => {
   }
 
 
-const CanvasView = () => {
+const CanvasViewWork = () => {
     return (
         <div className="canvsView">
             <motion.div style={{width: "100%", height: "100%"}}
               initial={{opacity: 0, y: 10}}
               animate={{opacity: 1, y: 0}}
-              transition={{delay: 1.5, duration: .5, type: "just", stiffness: 120}}
+              transition={{delay: .7, duration: .5, type: "just", stiffness: 120}}
             >
               <Canvas colorManagement camera={{position: [0, 0, 130], fov: 70}}>
                   <Lights />
@@ -71,24 +71,8 @@ const CanvasView = () => {
                   </Suspense>
               </Canvas>
             </motion.div>
-
-            <motion.p className="its_me"
-              initial={{opacity: 0, y: 10}}
-              animate={{opacity: 1, y: 0}}
-              transition={{delay: 1.7, duration: .5, type: "just", stiffness: 120}}
-            >
-                Hello, I am a full-stack developer based in BD!
-            </motion.p>
-
-            <motion.p className="i_build"
-              initial={{opacity: 0, y: 10}}
-              animate={{opacity: 1, y: 0}}
-              transition={{delay: 1.9, duration: .5, type: "just", stiffness: 120}}
-            >
-              I build things for <span>the web.</span>
-            </motion.p>
         </div>
     )
 }
 
-export default CanvasView
+export default CanvasViewWork

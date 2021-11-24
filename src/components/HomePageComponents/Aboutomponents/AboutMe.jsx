@@ -2,6 +2,7 @@ import React from 'react'
 import { LogoGithub, LogoInstagram, LogoTwitter,
     LogoLinkedin
 } from 'react-ionicons'
+import { motion } from "framer-motion"
 import AboutSectionSkillSets from './AboutSectionSkillSets'
 
 const AboutMe = () => {
@@ -24,9 +25,13 @@ const AboutMe = () => {
                     </p>
                 </div>
 
-                <div className="about_image">
+                <motion.div className="about_image"
+                    initial={{opacity: 0, y: 10}}
+                    animate={{opacity: 1, y: 0}}
+                    transition={{delay: 1.5, duration: .5, type: "just", stiffness: 120}}
+                >
                     <img src="/Images/AboutImage/1.jpg" alt="profile_image" />
-                </div>
+                </motion.div>
             </div>
 
             <div className="social_icons">

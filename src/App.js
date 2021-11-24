@@ -1,13 +1,15 @@
-import ScrollAnimation from 'react-animate-on-scroll';
 import { useProgress } from "drei";
 import { a, useTransition } from "@react-spring/web";
+import {BrowserRouter, Route} from "react-router-dom";
 import 'animate.css';
 import './App.css';
 import Header from './components/HomePageComponents/Header';
-import CanvasView from './components/HomePageComponents/3Dview';
-import AboutMe from './components/HomePageComponents/Aboutomponents/AboutMe';
-import Experience from './components/HomePageComponents/ExperienceComponents/Experience';
-import Works from './components/HomePageComponents/WorksComponents/Works';
+import HomePage from './components/HomePageComponents/HomePage';
+import Footer from "./components/HomePageComponents/footerComponents/Footer";
+
+// Works Components
+import AnimeApp from './components/HomePageComponents/WorkDetailComponents/AnimeApp'
+import SocialClone from "./components/HomePageComponents/WorkDetailComponents/SocialClone";
 
 
 const Loader = () => {
@@ -37,22 +39,24 @@ function App() {
   return (
     <div className={active !== false || progress < 100 ? "full_website": "none"}>
       <Loader />
-      <Header />
-      <CanvasView />
+      
+      {active === false || progress > 100 ?
+        <>
+          <BrowserRouter>
+            <Header />         
+            <Route path="/" exact component={() => <HomePage />} />
 
-      <div className="abouts_section">
-        <ScrollAnimation animateIn="animate__fadeIn">
-          <AboutMe />
-        </ScrollAnimation>
+            {/* AnimeApp React JS */}
+            <Route path="/works/0" exact component={() => <AnimeApp />} />
 
-        <ScrollAnimation animateIn="animate__fadeIn">
-          <Experience />
-        </ScrollAnimation>
+            {/* Social Site Clone */}
+            <Route path="/works/1" exact component={() => <SocialClone />} />
+          </BrowserRouter>      
+        </>:
+        <div></div>
+      }
 
-        <ScrollAnimation animateIn="animate__fadeIn">
-          <Works />
-        </ScrollAnimation>
-      </div>
+      <Footer />
     </div>
   );
 }
