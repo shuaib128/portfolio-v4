@@ -61,6 +61,7 @@ a {
   margin: 0 auto;
   width: 600px;
   height: 450px;
+  cursor: grabbing;
 }
 
 .fullCan{
@@ -91,10 +92,6 @@ a {
   font-size: 18px;
   font-weight: bold;
   color: var(--second-font-color);
-}
-
-.nav_side{
-
 }
 
 .nav_side li{
@@ -174,10 +171,6 @@ a {
   line-height: 1.2;
 }
 
-.short_Des{
-
-}
-
 .me_description{
   margin-top: 20px;
   line-height: 1.5;
@@ -207,13 +200,13 @@ a {
 }
 
 .loading {
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   bottom: 0px;
   width: 100%;
-  height: 100vh;
-  background: #171717;
+  height: 100%;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -240,10 +233,6 @@ a {
 
 .hidden_nav{
   display: none;
-}
-
-.hidden_nav{
-
 }
 
 .ham-box{
@@ -428,10 +417,6 @@ canvas {
 
 .skillsets{
   margin-top: 20px;
-}
-
-.skillsethrader{
-  
 }
 
 .skillsetUP{
@@ -663,11 +648,9 @@ canvas {
 .work_detail_des{
   margin-top: 50px;
   font-size: 18px;
+  line-height: 1.4;
 }
 
-.work_detail_des p{
-  
-}
 
 .work_detail_des ul{
   padding-left: 20px;

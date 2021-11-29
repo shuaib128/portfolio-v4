@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { motion } from "framer-motion"
 import CanvasViewWork from '../3DviewWorkDetail'
 import { CodeWorkingOutline } from 'react-ionicons'
 
 const SocialClone = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
     return (
         <>
             <CanvasViewWork />
@@ -64,7 +67,7 @@ const SocialClone = () => {
                     <img src="/Images/ProjectsImages/menkiki_eyecatch.png" alt="wkimage" />
 
                     <div className="images__work">
-                        <img src="/Images/ProjectsImages/menkiki_02.png" alt="wkimage" />
+                        <img src="/Images/ProjectsImages/menkiki_02.jpg" alt="wkimage" />
                         <img src="/Images/ProjectsImages/menkiki_01.png" alt="wkimage" />
                     </div>
 

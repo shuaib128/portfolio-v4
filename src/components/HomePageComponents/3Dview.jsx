@@ -1,3 +1,5 @@
+import { useProgress } from "drei";
+import { a, useTransition } from "@react-spring/web";
 import React, { Suspense, useRef } from "react";
 import { Canvas, useFrame } from "react-three-fiber";
 import { OrbitControls, useGLTFLoader } from "drei";
@@ -7,6 +9,27 @@ import { motion } from "framer-motion"
 function Model() {
     const gltf = useGLTFLoader("/Models/scene.gltf", true);
     return <primitive object={gltf.scene} dispose={null} />;
+}
+
+const Loader = () => {
+  const { active, progress } = useProgress();
+  const transition = useTransition(active, {
+    from: { opacity: 1, progress: 0 },
+    leave: { opacity: 0 },
+    update: { progress },
+  });
+
+  return transition(
+    ({ progress, opacity }, active) =>
+      active && (
+        <a.div className='loading' style={{ opacity }}>
+          <div className='loading-bar-container'>
+            <a.div className='loading-bar' style={{ width: progress }}></a.div>
+            <a.div className='loading-text'>{progress}</a.div>
+          </div>
+        </a.div>
+      )
+  );
 }
 
 const Lights = () => {
@@ -59,11 +82,12 @@ const HTMLContent = () => {
 const CanvasView = () => {
     return (
         <div className="canvsView">
-            <motion.div style={{width: "100%", height: "100%"}}
+            <motion.div style={{width: "100%", height: "100%", position: "relative"}}
               initial={{opacity: 0, y: 10}}
               animate={{opacity: 1, y: 0}}
               transition={{delay: 1.5, duration: .5, type: "just", stiffness: 120}}
             >
+              <Loader />
               <Canvas colorManagement camera={{position: [0, 0, 130], fov: 70}}>
                   <Lights />
                   <Suspense fallback={null}>

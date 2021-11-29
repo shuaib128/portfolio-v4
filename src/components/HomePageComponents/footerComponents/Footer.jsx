@@ -8,7 +8,7 @@ const Footer = () => {
             animate={{opacity: 1}}
             transition={{delay: .5, duration: .5, type: 'spring', stiffness: 120}}
         >
-            <p>© 2021 Takuya Matsuyama. All Rights Reserved.</p>
+            <p>© 2021 Shuaib Ahamed. All Rights Reserved.</p>
         </motion.div>
     )
 }
