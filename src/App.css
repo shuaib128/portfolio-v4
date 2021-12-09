@@ -53,6 +53,10 @@
     .work_detail_des img{
         height: 43vw;
     }
+    
+    .login_message{
+        width: 90%;
+    }
 }
 
 
@@ -156,6 +160,15 @@
 
     .images__work img{
         height: 70vw;
+    }
+
+    .login_message{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .login_getintouch{
+        font-size: 35px !important;
     }
 }
 

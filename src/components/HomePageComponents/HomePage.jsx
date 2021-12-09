@@ -4,6 +4,7 @@ import CanvasView from './3Dview';
 import AboutMe from './Aboutomponents/AboutMe';
 import Experience from './ExperienceComponents/Experience';
 import Works from './WorksComponents/Works';
+import Contact from '../Contact';
 
 const HomePage = () => {
     return (
@@ -20,6 +21,10 @@ const HomePage = () => {
 
                 <ScrollAnimation animateIn="animate__fadeIn">
                     <Works />
+                </ScrollAnimation>
+
+                <ScrollAnimation animateIn="animate__fadeIn">
+                    <Contact />
                 </ScrollAnimation>
             </div>
         </>

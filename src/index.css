@@ -144,7 +144,7 @@ a {
 .its_me{
   font-size: 17px;
   background: rgb(255 255 255 / 8%);
-  width: 70%;
+  width: 75%;
   margin: 5px auto;
   padding: 17px 20px;
   border-radius: 4px;
@@ -692,4 +692,31 @@ canvas {
   font-size: 15px;
   margin: 0 auto;
   width: 90%;
+}
+
+.login_message{
+  margin: 0 auto;
+  width: 63%;
+  font-size: 17px;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.4;
+  color: rgb(255 255 255 / 92%);
+}
+
+.email-link{
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-top: 45px;
+  border: 1px solid var(--second-font-color);
+  width: 114px;
+  padding: 14px 0;
+  color: var(--second-font-color);
+  border-radius: 4px;
+  transition: .5s;
+}
+
+.email-link:hover{
+  background: var(--button-hover-bg-color);
 }

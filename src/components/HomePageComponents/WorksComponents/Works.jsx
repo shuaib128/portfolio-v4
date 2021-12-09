@@ -1,16 +1,22 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { FolderOutline, LogoGithub } from 'react-ionicons'
 import { Link } from 'react-router-dom';
-import { Works_s } from './WorksList'
+import sanityClient from './Client'
 
 
 const Works = () => {
+    const [Projects, setProjects] = useState(() => {
+        sanityClient.fetch(`*[_type == "projects"]`)
+        .then((data) => setProjects(data))
+        .catch(console.error);
+    })
+
     return (
         <div id="work_section" className="works_section">
             <p className="about_me"><span>03.</span> Works</p>
 
             <div className="works">
-                {Works_s.map((work, index) => (
+                {Projects && Projects.map((work, index) => (
                     <div className="work" key={index}>
                         <div className="file_github_diret_link">
                             <FolderOutline
@@ -30,11 +36,11 @@ const Works = () => {
                                 {work.title}
                             </Link>
                         </p>
-                        <p className="exe_project">{work.exe}</p>
+                        <p className="exe_project">{work.excerpt}</p>
                         
                         <div className="cats">
-                            {work.cat.map((cat, index) => (
-                                <p className="ct" key={index}>{cat}</p>
+                            {work.category && work.category.map((cat, index) => (
+                                <p className="ct" key={index}>{cat.cat}</p>
                             ))}
                         </div>
                     </div>

@@ -6,8 +6,7 @@ import HomePage from './components/HomePageComponents/HomePage';
 import Footer from "./components/HomePageComponents/footerComponents/Footer";
 
 // Works Components
-import AnimeApp from './components/HomePageComponents/WorkDetailComponents/AnimeApp'
-import SocialClone from "./components/HomePageComponents/WorkDetailComponents/SocialClone";
+import AnimeApp from './components/HomePageComponents/WorkDetailComponents/AnimeApp';
 
 
 function App() {
@@ -20,10 +19,7 @@ function App() {
           <Route path="/" exact component={() => <HomePage />} />
 
           {/* AnimeApp React JS */}
-          <Route path="/works/0" exact component={() => <AnimeApp />} />
-
-          {/* Social Site Clone */}
-          <Route path="/works/1" exact component={() => <SocialClone />} />
+          <Route path="/works/:id" exact component={() => <AnimeApp />} />
           <Footer />
         </BrowserRouter>      
       </>

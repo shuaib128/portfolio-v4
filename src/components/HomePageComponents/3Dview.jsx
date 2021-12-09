@@ -101,7 +101,7 @@ const CanvasView = () => {
               animate={{opacity: 1, y: 0}}
               transition={{delay: 1.7, duration: .5, type: "just", stiffness: 120}}
             >
-                Hello, I am a full-stack developer based in BD!
+                Hello, I am a full-stack developer based in WA!
             </motion.p>
 
             <motion.p className="i_build"
