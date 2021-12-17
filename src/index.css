@@ -666,6 +666,7 @@ canvas {
   display: block;
   height: 400px;
   margin-top: 20px;
+  object-fit: contain;
 }
 
 .images__work{
