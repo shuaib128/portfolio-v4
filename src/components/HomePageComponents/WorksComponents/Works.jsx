@@ -24,11 +24,13 @@ const Works = () => {
                                 height="33px"
                                 width="33px"
                             />
+                            <a href={work && work.source}>
                             <LogoGithub
                                 color={'#c9c9c9'}
                                 height="23px"
                                 width="23px"
                             />
+                            </a>
                         </div>
 
                         <p className="title_project">
@@ -36,7 +38,7 @@ const Works = () => {
                                 {work.title}
                             </Link>
                         </p>
-                        <p className="exe_project">{work.excerpt}</p>
+                        <p className="exe_project">{work.excerpt.slice(0, 100)}....</p>
                         
                         <div className="cats">
                             {work.category && work.category.map((cat, index) => (

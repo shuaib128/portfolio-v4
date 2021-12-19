@@ -170,6 +170,10 @@
     .login_getintouch{
         font-size: 35px !important;
     }
+    
+    .work_detail_des figure{
+        margin: 0px;
+    }
 }
 
 
