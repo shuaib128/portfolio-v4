@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { motion } from "framer-motion"
 
 const HiddenNav = () => {
@@ -6,9 +6,9 @@ const HiddenNav = () => {
 
     return (
         <motion.div className="hidden_nav"
-            initial={{opacity: 0}}
-            animate={{opacity: 1}}
-            transition={{delay: .5, duration: .5, type: 'spring', stiffness: 120}}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: .5, duration: .5, type: 'spring', stiffness: 120 }}
         >
             <button className="hidden_nav_button" onClick={() => {
                 NevActive ? setNevActive(false) : setNevActive(true)
@@ -26,7 +26,7 @@ const HiddenNav = () => {
                 }
             </button>
 
-            <div className={NevActive ? "hiddenbuttonPaddOpen": "hiddenbuttonPadd"}>
+            <div className={NevActive ? "hiddenbuttonPaddOpen" : "hiddenbuttonPadd"}>
                 <div className="hiddenbuttonPaddMain">
                     <li><a href="#about_section"><span>01.</span> About</a></li>
                     <li><a href="#experiencet_section"><span>02.</span> Experience</a></li>

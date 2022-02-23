@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { expoDes } from './expericenceJson'
 
 const Experience = () => {
@@ -14,9 +14,9 @@ const Experience = () => {
 
             <div className="experience_block">
                 <div className="experience_block_button">
-                    <div className="stickIndicator" style={{top: 40 * Istoggle}}></div>
+                    <div className="stickIndicator" style={{ top: 40 * Istoggle }}></div>
                     {experiences.map((expe, index) => (
-                        <button 
+                        <button
                             key={index}
                             className={Istoggle === index ? "activeTab" : "tab"}
                             onClick={() => toggleTab(index)}
@@ -29,7 +29,7 @@ const Experience = () => {
                 <div className="experience_block_inner">
                     {expoDes.map((des, index) => (
                         <div>
-                            <p 
+                            <p
                                 id="desSkill"
                                 className={Istoggle === index ? "openDesBox" : "closeDesBox"}
                                 key={index}

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import { FolderOutline, LogoGithub } from 'react-ionicons'
 import { Link } from 'react-router-dom';
 import sanityClient from './Client'
@@ -7,8 +7,8 @@ import sanityClient from './Client'
 const Works = () => {
     const [Projects, setProjects] = useState(() => {
         sanityClient.fetch(`*[_type == "projects"]`)
-        .then((data) => setProjects(data))
-        .catch(console.error);
+            .then((data) => setProjects(data))
+            .catch(console.error);
     })
 
     return (
@@ -25,11 +25,11 @@ const Works = () => {
                                 width="33px"
                             />
                             <a href={work && work.source}>
-                            <LogoGithub
-                                color={'#c9c9c9'}
-                                height="23px"
-                                width="23px"
-                            />
+                                <LogoGithub
+                                    color={'#c9c9c9'}
+                                    height="23px"
+                                    width="23px"
+                                />
                             </a>
                         </div>
 
@@ -39,7 +39,7 @@ const Works = () => {
                             </Link>
                         </p>
                         <p className="exe_project">{work.excerpt.slice(0, 100)}....</p>
-                        
+
                         <div className="cats">
                             {work.category && work.category.map((cat, index) => (
                                 <p className="ct" key={index}>{cat.cat}</p>

@@ -1,30 +1,30 @@
-@media screen and (max-width: 900px){
-  .nav_side{
-      display: none;
-  }
+@media screen and (max-width: 900px) {
+    .nav_side {
+        display: none;
+    }
 
-  .hidden_nav{
-      display: block;
-  }
+    .hidden_nav {
+        display: block;
+    }
 
-  .header{
-      padding: 15px 30px;
-  }
+    .header {
+        padding: 15px 30px;
+    }
 
-  .logo_side{
-      margin-top: 10px;
-  }
+    .logo_side {
+        margin-top: 10px;
+    }
 
-  .canvsView {
-      height: 387px;
-  }
+    .canvsView {
+        height: 387px;
+    }
 
-  .about_detail_image {
-      display: flex;
-      flex-direction: column-reverse;
-   }
+    .about_detail_image {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
-   .about_image {
+    .about_image {
         width: 60%;
         margin: 0 auto;
     }
@@ -34,173 +34,174 @@
         margin-top: 73px;
     }
 
-    .experience_section{
+    .experience_section {
         width: 80%;
     }
 
-    .about_section{
+    .about_section {
         width: 80%;
     }
 
-    .works{
+    .works {
         grid-template-columns: 1fr 1fr;
     }
 
-    .workDetail{
+    .workDetail {
         width: 80%;
     }
 
-    .work_detail_des img{
+    .work_detail_des img {
         height: 43vw;
     }
-    
-    .login_message{
+
+    .login_message {
         width: 90%;
     }
 }
 
 
 
-@media screen and (max-width: 500px){
-  .hiddenbuttonPadd{
-      width: 70vw;
-  }
-
-  .hiddenbuttonPaddOpen{
-      width: 70vw;
-  }
-
-  .canvsView{
-      width: 90%;
-      margin-top: 55px;
-  }
-
-  .its_me {
-      font-size: 15px;
-      background: rgb(255 255 255 / 8%);
-      width: 90%;
-      margin: 5px auto;
-      padding: 17px 20px;
-  }
-
-  .i_build {
-      font-size: clamp(30px, 2vw, 30px);
-      width: 90%;
-      margin: 0 auto;
-      margin-top: 10px;
-  }
-
-  .abouts_section {
-      width: 90%;
-      margin-top: 204px;
-  }
-
-  .about_me {
-      font-size: 22px;
-      margin: 45px 0px 30px;
-  }
-
-  .name {
-      font-size: 1.90rem;
-  }
-
-  .header {
-      padding: 10px 12px;
-  }
-
-  .about_me {
-    margin-top: 19%;
+@media screen and (max-width: 500px) {
+    .hiddenbuttonPadd {
+        width: 70vw;
     }
 
-  .about_image {
-      width: 79%;
-   }
-
-   .experience_block{
-       display: block;
-   }
-
-   .experience_block_button{
-       width: 100%;
-   }
-
-   .experience_block_inner{
-       width: 100%;
-   }
-
-   .desTitle{
-       margin-top: 35px;
-       margin-bottom: 15px;
-   }
-
-   .about_section{
-       width: 90%;
-   }
-
-
-   .works{
-       grid-template-columns: 1fr;
-   }
-
-   .experience_block_inner{
-       margin: 0px;
-   }
-
-   .workDetail {
-        width: 92%;
+    .hiddenbuttonPaddOpen {
+        width: 70vw;
     }
 
-    .work_detail_des img, .images__work{
+    .canvsView {
+        width: 90%;
+        margin-top: 55px;
+    }
+
+    .its_me {
+        font-size: 15px;
+        background: rgb(255 255 255 / 8%);
+        width: 90%;
+        margin: 5px auto;
+        padding: 17px 20px;
+    }
+
+    .i_build {
+        font-size: clamp(30px, 2vw, 30px);
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .abouts_section {
+        width: 90%;
+        margin-top: 204px;
+    }
+
+    .about_me {
+        font-size: 22px;
+        margin: 45px 0px 30px;
+    }
+
+    .name {
+        font-size: 1.90rem;
+    }
+
+    .header {
+        padding: 10px 12px;
+    }
+
+    .about_me {
+        margin-top: 19%;
+    }
+
+    .about_image {
+        width: 79%;
+    }
+
+    .experience_block {
+        display: block;
+    }
+
+    .experience_block_button {
         width: 100%;
     }
 
-    .work_detail_des img{
+    .experience_block_inner {
+        width: 100%;
+    }
+
+    .desTitle {
+        margin-top: 35px;
+        margin-bottom: 15px;
+    }
+
+    .about_section {
+        width: 90%;
+    }
+
+
+    .works {
+        grid-template-columns: 1fr;
+    }
+
+    .experience_block_inner {
+        margin: 0px;
+    }
+
+    .workDetail {
+        width: 92%;
+    }
+
+    .work_detail_des img,
+    .images__work {
+        width: 100%;
+    }
+
+    .work_detail_des img {
         height: 59vw;
     }
 
-    .images__work img{
+    .images__work img {
         height: 70vw;
     }
 
-    .login_message{
+    .login_message {
         width: 100%;
         font-size: 16px;
     }
 
-    .login_getintouch{
+    .login_getintouch {
         font-size: 35px !important;
     }
-    
-    .work_detail_des figure{
+
+    .work_detail_des figure {
         margin: 0px;
     }
 }
 
 
 
-@media screen and (max-width: 500px){
-  .canvsView {
-      width: 100%;
-  }
-
-  .about_image {
-     width: 70%;
-   }
-
-   .skillsetUP{
-     width: 100%;
-   }
-
-   .about_section{
+@media screen and (max-width: 500px) {
+    .canvsView {
         width: 100%;
     }
 
-    .experience_section{
+    .about_image {
+        width: 70%;
+    }
+
+    .skillsetUP {
+        width: 100%;
+    }
+
+    .about_section {
+        width: 100%;
+    }
+
+    .experience_section {
         width: 100%;
         padding: 0px 0px;
     }
 
-    .works_section{
+    .works_section {
         width: 97%;
         padding: 5px 0px;
     }

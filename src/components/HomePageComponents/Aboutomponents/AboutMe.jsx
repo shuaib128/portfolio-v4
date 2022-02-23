@@ -1,5 +1,6 @@
 import React from 'react'
-import { LogoGithub, LogoInstagram, LogoTwitter,
+import {
+    LogoGithub, LogoInstagram, LogoTwitter,
     LogoLinkedin
 } from 'react-ionicons'
 import { motion } from "framer-motion"
@@ -16,7 +17,7 @@ const AboutMe = () => {
                         Digital Craftsman ( Student / Developer / Gamer )
                     </p>
                     <p className="me_description">
-                        Shuaib is a CS student and a full-stack developer based in Lynnwood, WA with a passion for 
+                        Shuaib is a CS student and a full-stack developer based in Lynnwood Washington with a passion for
                         building digital services/stuff he wants. He has a knack for all things launching products,
                         from planning and designing all the way to solving real-life problems with code.
                         <br></br>
@@ -26,9 +27,9 @@ const AboutMe = () => {
                 </div>
 
                 <motion.div className="about_image"
-                    initial={{opacity: 0, y: 10}}
-                    animate={{opacity: 1, y: 0}}
-                    transition={{delay: 1.5, duration: .5, type: "just", stiffness: 120}}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 1.5, duration: .5, type: "just", stiffness: 120 }}
                 >
                     <img src="/Images/AboutImage/1.jpg" alt="profile_image" />
                 </motion.div>

@@ -6,7 +6,7 @@ import HomePage from './components/HomePageComponents/HomePage';
 import Footer from "./components/HomePageComponents/footerComponents/Footer";
 
 // Works Components
-import AnimeApp from './components/HomePageComponents/WorkDetailComponents/AnimeApp';
+import Work from './components/HomePageComponents/WorkDetailComponents/Work';
 
 
 function App() {
@@ -15,11 +15,12 @@ function App() {
       <>
         <BrowserRouter>
           <Header />
-                    
+
+          {/* HomePage     */}
           <Route path="/" exact component={() => <HomePage />} />
 
-          {/* AnimeApp React JS */}
-          <Route path="/works/:id" exact component={() => <AnimeApp />} />
+          {/* Works */}
+          <Route path="/works/:id" exact component={() => <Work />} />
           <Footer />
         </BrowserRouter>      
       </>
