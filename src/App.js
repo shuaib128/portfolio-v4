@@ -1,4 +1,4 @@
-import {BrowserRouter, Route} from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import 'animate.css';
 import './App.css';
 import Header from './components/HomePageComponents/Header';
@@ -11,7 +11,7 @@ import Work from './components/HomePageComponents/WorkDetailComponents/Work';
 
 function App() {
   return (
-    <div>      
+    <div>
       <>
         <BrowserRouter>
           <Header />
@@ -22,7 +22,7 @@ function App() {
           {/* Works */}
           <Route path="/works/:id" exact component={() => <Work />} />
           <Footer />
-        </BrowserRouter>      
+        </BrowserRouter>
       </>
     </div>
   );

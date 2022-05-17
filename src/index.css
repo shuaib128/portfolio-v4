@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@100;200;300;400;500;600&family=Rubik:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
 :root {
   --main-bg-color: rgb(32 32 35);
   --main-font-color: rgb(255 255 255 / 92%);
   --second-font-color: #64ffda;
   --main-font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-  --second-font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  --second-font-family: 'Roboto Mono', monospace !important;
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   --header-color: #20202380;
   --button-hover-bg-color: rgb(100 255 218 / 10%);
@@ -13,7 +16,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--main-font-family);
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   background: var(--main-bg-color);
   color: var(--main-font-color);
   scroll-behavior: smooth;
@@ -24,6 +29,11 @@ img {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
+}
+
+#root {
+  width: 80rem;
+  margin: 0 auto;
 }
 
 .full_website {
@@ -65,6 +75,7 @@ a {
   width: 600px;
   height: 450px;
   cursor: grabbing;
+  margin-top: 58px;
 }
 
 .fullCan {
@@ -89,6 +100,8 @@ a {
   background: var(--header-color);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  width: 86rem;
+  margin: 0 auto;
 }
 
 .logo_side a {
@@ -172,12 +185,13 @@ a {
   font-size: 2.25rem;
   font-weight: 700;
   line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 .me_description {
   margin-top: 20px;
-  line-height: 1.5;
-  word-spacing: 1px;
+  line-height: 1.7;
+  word-spacing: 2px;
 }
 
 .i_build {
@@ -514,7 +528,7 @@ canvas {
 }
 
 #desSkill {
-  line-height: 1.5;
+  line-height: 1.7;
   word-spacing: 2px;
 }
 
@@ -572,7 +586,8 @@ canvas {
 .exe_project {
   color: #c9c9c9;
   font-size: 15px;
-  line-height: 1.3;
+  line-height: 1.5;
+  word-spacing: 2px;
 }
 
 .cats {
