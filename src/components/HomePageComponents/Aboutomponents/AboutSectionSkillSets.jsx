@@ -15,6 +15,7 @@ const AboutSectionSkillSets = () => {
                 <li>React Native</li>
                 <li>Next JS</li>
                 <li>WordPress</li>
+                <li>Docker</li>
                 <li>Django</li>
                 <li>Django REST</li>
             </ul>

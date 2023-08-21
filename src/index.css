@@ -558,7 +558,7 @@ canvas {
 .work {
   background: rgb(255 255 255 / 8%);
   margin-bottom: 15px;
-  height: fit-content;
+  height: auto;
   border-radius: 5px;
   padding: 27px 25px;
   cursor: pointer;
@@ -680,10 +680,10 @@ canvas {
 }
 
 .work_detail_des img {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: block;
-  height: 400px;
+  height: auto;
   margin-top: 20px;
   object-fit: contain;
 }
@@ -739,4 +739,9 @@ canvas {
 
 .email-link:hover {
   background: var(--button-hover-bg-color);
+}
+
+.dKThta svg:hover {
+  color: #64ffda;
+  fill: #64ffda;
 }

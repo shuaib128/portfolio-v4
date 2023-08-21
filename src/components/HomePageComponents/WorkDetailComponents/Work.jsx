@@ -64,13 +64,21 @@ const AnimeApp = () => {
                     </div>
                     <div className="stack_block">
                         <p className="which_platform">SOURCE CODE</p>
-                        <a href={Project && Project.source} className="type_platform type_platform_a">
+                        <a
+                            href={Project && Project.source}
+                            className="type_platform type_platform_a"
+                            target={"_blank"}
+                        >
                             View Source Code
                         </a>
                     </div>
                     <div className="stack_block">
                         <p className="which_platform">VIEW</p>
-                        <a href={Project && Project.view} className="type_platform type_platform_a">
+                        <a
+                            href={Project && Project.view}
+                            className="type_platform type_platform_a"
+                            target={"_blank"}
+                        >
                             See Demo
                         </a>
                     </div>
@@ -80,7 +88,7 @@ const AnimeApp = () => {
                     <BlockContent
                         blocks={Project && Project.body}
                         serializers={serializers}
-                        imageOptions={{ w: 620, h: 540, fit: 'max' }}
+                        imageOptions={{ w: 720, h: 640, fit: 'max', q: 100 }}
                         projectId="dka9odgj"
                         dataset="production"
                     />

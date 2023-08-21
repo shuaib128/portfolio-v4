@@ -2,10 +2,10 @@ export const Works_s = [
     {
         title: "Integrating Algolia Search",
         exe: "Building a custom multisite compatible WordPress plugin to build global search with Algolia",
-        cat: ["Alogoria", "Wordpress", "PHP"],
+        cat: ["Alogoria", "Wordpress", "PHP", "REACT-JS", "REACT-JS", "REACT-JS"],
         platform: "Web",
         stack: "Objective-C++, Swift, BLVC CaffeNet Model",
-        source: "github.com/craftzdog/caffe-ios-sample",
+        source: "https://chat.openai.com/",
         view: "facebook.com"
     },
     {
@@ -14,7 +14,7 @@ export const Works_s = [
         cat: ["Alogoria", "Wordpress", "PHP"],
         platform: "Web",
         stack: "Objective-C++, Swift, BLVC CaffeNet Model",
-        source: "github.com/craftzdog/caffe-ios-sample",
+        source: "https://www.github.com/craftzdog/caffe-ios-sample",
         view: "facebook.com"
     },
     {
@@ -23,7 +23,7 @@ export const Works_s = [
         cat: ["Alogoria", "Wordpress", "PHP"],
         platform: "Web",
         stack: "Objective-C++, Swift, BLVC CaffeNet Model",
-        source: "github.com/craftzdog/caffe-ios-sample",
+        source: "https://www.github.com/craftzdog/caffe-ios-sample",
         view: "facebook.com"
     },
     {
@@ -32,7 +32,7 @@ export const Works_s = [
         cat: ["Alogoria", "Wordpress", "PHP"],
         platform: "Web",
         stack: "Objective-C++, Swift, BLVC CaffeNet Model",
-        source: "github.com/craftzdog/caffe-ios-sample",
+        source: "https://www.github.com/craftzdog/caffe-ios-sample",
         view: "facebook.com"
     },
     {
@@ -41,7 +41,7 @@ export const Works_s = [
         cat: ["Alogoria", "Wordpress", "PHP"],
         platform: "Web",
         stack: "Objective-C++, Swift, BLVC CaffeNet Model",
-        source: "github.com/craftzdog/caffe-ios-sample",
+        source: "https://www.github.com/craftzdog/caffe-ios-sample",
         view: "facebook.com"
     },
     {
@@ -50,7 +50,7 @@ export const Works_s = [
         cat: ["Alogoria", "Wordpress", "PHP"],
         platform: "Web",
         stack: "Objective-C++, Swift, BLVC CaffeNet Model",
-        source: "github.com/craftzdog/caffe-ios-sample",
+        source: "https://www.github.com/craftzdog/caffe-ios-sample",
         view: "facebook.com"
     },
 ]

@@ -11,7 +11,7 @@ const HiddenNav = () => {
             transition={{ delay: .5, duration: .5, type: 'spring', stiffness: 120 }}
         >
             <button className="hidden_nav_button" onClick={() => {
-                NevActive ? setNevActive(false) : setNevActive(true)
+                setNevActive(!NevActive)
             }}>
                 {NevActive ?
                     <div className="ham-box">
@@ -28,11 +28,21 @@ const HiddenNav = () => {
 
             <div className={NevActive ? "hiddenbuttonPaddOpen" : "hiddenbuttonPadd"}>
                 <div className="hiddenbuttonPaddMain">
-                    <li><a href="#about_section"><span>01.</span> About</a></li>
-                    <li><a href="#experiencet_section"><span>02.</span> Experience</a></li>
-                    <li><a href="#work_section"><span>03.</span> Work</a></li>
-                    <li><a href="#contact_section"><span>04.</span> Contact</a></li>
-                    <li className="resume_link"><a href="#">Resume</a></li>
+                    <li onClick={() => setNevActive(!NevActive)}>
+                        <a href="/#about_section"><span>01.</span> About</a>
+                    </li>
+                    <li onClick={() => setNevActive(!NevActive)}>
+                        <a href="/#experiencet_section"><span>02.</span> Experience</a>
+                    </li>
+                    <li onClick={() => setNevActive(!NevActive)}>
+                        <a href="/#work_section"><span>03.</span> Work</a>
+                    </li>
+                    <li onClick={() => setNevActive(!NevActive)}>
+                        <a href="/#contact_section"><span>04.</span> Contact</a>
+                    </li>
+                    <li className="resume_link">
+                        <a href="#">Resume</a>
+                    </li>
                 </div>
             </div>
         </motion.div>

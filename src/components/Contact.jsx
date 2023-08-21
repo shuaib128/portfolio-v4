@@ -22,7 +22,7 @@ const Contact = () => {
             </p>
 
             <a
-                class="email-link" href="mailto:shuaibahamed77@gmail.com"
+                className="email-link" href="mailto:shueaus@gmail.com"
                 rel="noopener noreferrer" target="_blank">
                 Say Hello
             </a>

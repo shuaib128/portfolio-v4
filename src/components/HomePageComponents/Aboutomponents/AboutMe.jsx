@@ -36,29 +36,49 @@ const AboutMe = () => {
             </div>
 
             <div className="social_icons">
-                <a href="https://github.com/shuaib128" target={"_blank"}>
+                <a
+                    href="https://github.com/shuaib128"
+                    rel="noreferrer"
+                    target={"_blank"}
+                    title='Github'
+                >
                     <LogoGithub
                         color={'#64ffda'}
                         height="25px"
                         width="25px"
                     />
                 </a>
-                <a href="https://www.instagram.com/ahamed_shuaib/" target={"_blank"}>
+                <a
+                    href="https://www.linkedin.com/in/shuaib-ahamed-194384238/"
+                    rel="noreferrer"
+                    target={"_blank"}
+                    title='LinkedIn'
+                >
+                    <LogoLinkedin
+                        color={'#64ffda'}
+                        height="25px"
+                        width="25px"
+                    />
+                </a>
+                <a
+                    href="https://www.instagram.com/ahamed_shuaib/"
+                    rel="noreferrer"
+                    target={"_blank"}
+                    title='Instagram'
+                >
                     <LogoInstagram
                         color={'#64ffda'}
                         height="25px"
                         width="25px"
                     />
                 </a>
-                <a href="https://twitter.com/beingshuiab" target={"_blank"}>
+                <a
+                    href="https://twitter.com/beingshuiab"
+                    rel="noreferrer"
+                    target={"_blank"}
+                    title='Twitter'
+                >
                     <LogoTwitter
-                        color={'#64ffda'}
-                        height="25px"
-                        width="25px"
-                    />
-                </a>
-                <a href="https://www.linkedin.com/in/shuib-ahamed-91ab52199/" target={"_blank"}>
-                    <LogoLinkedin
                         color={'#64ffda'}
                         height="25px"
                         width="25px"
