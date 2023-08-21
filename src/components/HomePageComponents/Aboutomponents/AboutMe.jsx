@@ -11,7 +11,7 @@ const AboutMe = () => {
         <div id="about_section" className="about_section">
             <div className="about_detail_image">
                 <div className="about_details">
-                    <p className="about_me"><span>01.</span> About Me</p>
+                    <p className="about_me"><span>01. </span> About Me</p>
                     <p className="name">Shuaib Ahamed</p>
                     <p className="short_Des">
                         Digital Craftsman ( Student / Developer / Gamer )
