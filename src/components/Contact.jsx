@@ -3,7 +3,15 @@ import React from 'react'
 const Contact = () => {
     return (
         <div id='contact_section' className="works_section">
-            <p style={{ textAlign: "center", display: "block" }} className="about_me"><span>04.</span> What’s Next?</p>
+            <p
+                className="about_me"
+                style={{
+                    textAlign: "center",
+                    display: "block"
+                }}
+            >
+                <span>04.</span> What’s Next?
+            </p>
 
             <p className="login_getintouch" style={{
                 color: "white",

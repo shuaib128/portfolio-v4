@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { expoDes } from './expericenceJson'
 
 const Experience = () => {
-    const experiences = ["Front End", "Api", "App Development", "Full Stack", "Wordpress"]
+    const experiences = ["Front-end", "Api", "App Development", "Full Stack", "Wordpress"]
     const [Istoggle, setIstoggle] = useState(0)
     const toggleTab = (tabIndex) => {
         setIstoggle(tabIndex)

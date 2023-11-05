@@ -1,7 +1,6 @@
 import React from 'react'
 import {
-    LogoGithub, LogoInstagram, LogoTwitter,
-    LogoLinkedin
+    LogoGithub, LogoInstagram, LogoLinkedin
 } from 'react-ionicons'
 import { motion } from "framer-motion"
 import AboutSectionSkillSets from './AboutSectionSkillSets'
@@ -67,18 +66,6 @@ const AboutMe = () => {
                     title='Instagram'
                 >
                     <LogoInstagram
-                        color={'#64ffda'}
-                        height="25px"
-                        width="25px"
-                    />
-                </a>
-                <a
-                    href="https://twitter.com/beingshuiab"
-                    rel="noreferrer"
-                    target={"_blank"}
-                    title='Twitter'
-                >
-                    <LogoTwitter
                         color={'#64ffda'}
                         height="25px"
                         width="25px"
