@@ -16,12 +16,9 @@ const AboutMe = () => {
                         Digital Craftsman ( Student / Developer / Gamer )
                     </p>
                     <p className="me_description">
-                        Shuaib is a CS student and a full-stack developer based in Lynnwood Washington with a passion for
-                        building digital services/stuff he wants. He has a knack for all things launching products,
-                        from planning and designing all the way to solving real-life problems with code.
+                        Shuaib, a CS student at Edmonds College in Lynnwood, Washington, is a budding software engineer with expertise in Python, JavaScript (ES6+), TypeScript, React, React Native, Next.js, WordPress, Docker, Django, and Django REST.
                         <br></br>
-                        When not online, he loves hanging out with his camera. Currently, he is studing
-                        CS at Edmonds College Lynnwood, WA.
+                        Skilled in developing digital solutions from concept to code, he's passionate about solving real-world problems with technology. When he's not programming, he enjoys photography. Shuaib's diverse skill set positions him well for roles in software engineering and development.
                     </p>
                 </div>
 

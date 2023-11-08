@@ -1,7 +1,19 @@
+:root {
+    --main-bg-color: rgb(32 32 35);
+    --main-font-color: rgb(255 255 255 / 92%);
+    --second-font-color: #64ffda;
+    --main-font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
+    --second-font-family: 'Roboto Mono', monospace !important;
+    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    --header-color: #20202380;
+    --button-hover-bg-color: rgb(100 255 218 / 10%);
+}
+
 @media screen and (max-width: 1600px) {
     .header {
         width: 100%;
     }
+
     #root {
         width: 100%;
     }
@@ -52,8 +64,25 @@
         width: 80%;
     }
 
-    .works {
-        grid-template-columns: 1fr 1fr;
+    .works {}
+
+    .work {
+        display: block;
+        border: 3px dotted var(--second-font-color);
+        border-radius: 5px;
+    }
+
+    .featuredandtitle {
+        padding: 15px 15px;
+    }
+
+    .cats {
+        padding: 0px 15px;
+    }
+
+    .link-icons {
+        padding: 0px 15px;
+        padding-bottom: 15px;
     }
 
     .workDetail {
@@ -66,6 +95,11 @@
 
     .login_message {
         width: 90%;
+    }
+
+    .description_text {
+        text-align: start;
+        padding: 15px;
     }
 }
 
@@ -148,9 +182,7 @@
     }
 
 
-    .works {
-        grid-template-columns: 1fr;
-    }
+    .works {}
 
     .experience_block_inner {
         margin: 0px;
