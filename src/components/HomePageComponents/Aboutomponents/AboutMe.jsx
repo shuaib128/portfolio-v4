@@ -16,16 +16,28 @@ const AboutMe = () => {
                         Digital Craftsman ( Student / Developer / Gamer )
                     </p>
                     <p className="me_description">
-                        Shuaib, a CS student at Edmonds College in Lynnwood, Washington, is a budding software engineer with expertise in Python, JavaScript (ES6+), TypeScript, React, React Native, Next.js, WordPress, Docker, Django, and Django REST.
+                        Shuaib, a CS student at Edmonds College in Lynnwood, Washington, is a
+                        budding software engineer with expertise in Python, JavaScript (ES6+),
+                        TypeScript, React, React Native, Next.js, WordPress, Docker, Django,
+                        and Django REST.
                         <br></br>
-                        Skilled in developing digital solutions from concept to code, he's passionate about solving real-world problems with technology. When he's not programming, he enjoys photography. Shuaib's diverse skill set positions him well for roles in software engineering and development.
+                        Skilled in developing digital solutions from concept to code, he's
+                        passionate about solving real-world problems with technology.
+                        When he's not programming, he enjoys photography. Shuaib's diverse
+                        skill set positions him well for roles in software engineering and
+                        development.
                     </p>
                 </div>
 
                 <motion.div className="about_image"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1.5, duration: .5, type: "just", stiffness: 120 }}
+                    transition={{
+                        delay: 1.5,
+                        duration: .5,
+                        type: "just",
+                        stiffness: 120
+                    }}
                 >
                     <img src="/Images/AboutImage/1.jpg" alt="profile_image" />
                 </motion.div>
@@ -70,6 +82,7 @@ const AboutMe = () => {
                 </a>
             </div>
 
+            {/* List of Skills I want to show */}
             <AboutSectionSkillSets />
         </div>
     )

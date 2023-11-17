@@ -18,6 +18,7 @@ const AboutSectionSkillSets = () => {
                 <li>Docker</li>
                 <li>Django</li>
                 <li>Django REST</li>
+                <li>Java</li>
             </ul>
         </div>
     )

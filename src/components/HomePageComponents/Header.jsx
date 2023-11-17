@@ -51,7 +51,7 @@ const Header = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1.3, duration: .5, type: 'spring', stiffness: 120 }}
                 >
-                    <a href="#">Resume</a>
+                    <a href="/Files/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 </motion.li>
             </div>
 

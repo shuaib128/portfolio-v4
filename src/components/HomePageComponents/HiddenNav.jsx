@@ -41,7 +41,7 @@ const HiddenNav = () => {
                         <a href="/#contact_section"><span>04.</span> Contact</a>
                     </li>
                     <li className="resume_link">
-                        <a href="#">Resume</a>
+                        <a href="/Files/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                     </li>
                 </div>
             </div>
