@@ -5,7 +5,7 @@ export const Works_s = [
         exe: "A user-friendly screen recording application developed using PyQt5. This tool not only captures your screen but also intelligently detects periods when there is no speech. Once your recording session is complete, it provides the option to seamlessly fast-forward through these silent timespans. Ideal for users looking to review their recordings without the pauses, ensuring a streamlined playback experience.",
         cat: ["Python", "PyQt5", "FFMPEG", "PyAutoGUI", "Sounddevice-Python", "pyaudio", "SQLite"],
         source: "https://github.com/shuaib128/Quick-Clip",
-        view: "https://drive.google.com/file/d/1Y1NbiACQuEfJror8DN-TxRAlqgdpaSr4/view?usp=sharing"
+        view: "https://drive.google.com/file/d/1IijlDj4MIcuR_cUNrwUY6_wFl1aSxoBY/view?usp=drive_link"
     },
     {
         title: "Seattle Device Repair",
@@ -21,7 +21,7 @@ export const Works_s = [
         exe: "Banglish is a sophisticated yet user-friendly Chrome extension that leverages a robust phonetic parsing system to convert English transliterations into beautiful Bengali script. Whether you are writing emails, engaging on social media, or creating documents, Banglish ensures that your thoughts are effortlessly expressed in Bengali.",
         cat: ["JavaScript", "HTML", "Webpack", "NPM"],
         source: "https://github.com/shuaib128/Banglish",
-        view: "https://drive.google.com/file/d/1Y1NbiACQuEfJror8DN-TxRAlqgdpaSr4/view?usp=sharing"
+        view: "https://drive.google.com/file/d/1FQtES_LCOFu6ouCHQEirINfWO1OxDI2T/view?usp=drive_link"
     },
     {
         title: "Cine Match",
