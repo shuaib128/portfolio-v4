@@ -28,7 +28,7 @@ const Experience = () => {
 
                 <div className="experience_block_inner">
                     {expoDes.map((des, index) => (
-                        <div>
+                        <div key={index}>
                             <p
                                 id="desSkill"
                                 className={Istoggle === index ? "openDesBox" : "closeDesBox"}
