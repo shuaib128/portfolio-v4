@@ -1,12 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@100;200;300;400;500;600&family=Rubik:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@100;200;300;400;500;600&family=Rubik:wght@300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
 
 :root {
   --main-bg-color: rgb(32 32 35);
   --main-font-color: rgb(255 255 255 / 92%);
   --second-font-color: #64ffda;
-  --main-font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
-  --second-font-family: 'Roboto Mono', monospace !important;
+  --main-font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text",
+    -apple-system, system-ui, sans-serif;
+  --second-font-family: "Roboto Mono", monospace !important;
   --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
   --header-color: #20202380;
   --button-hover-bg-color: rgb(100 255 218 / 10%);
@@ -16,9 +17,9 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Rubik', sans-serif;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background: var(--main-bg-color);
   color: var(--main-font-color);
   scroll-behavior: smooth;
@@ -165,6 +166,7 @@ a {
   padding: 17px 20px;
   border-radius: 4px;
   text-align: center;
+  margin-top: 90px;
 }
 
 .about_me {
@@ -235,7 +237,7 @@ a {
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .loading-bar-container {
@@ -352,7 +354,7 @@ a {
   width: 60vw;
   right: 0;
   top: 0;
-  transition: .7s;
+  transition: 0.7s;
   right: -100%;
 }
 
@@ -363,7 +365,7 @@ a {
   width: 60vw;
   right: 0;
   top: 0;
-  transition: .7s;
+  transition: 0.7s;
   right: 0%;
 }
 
@@ -398,7 +400,7 @@ a {
   margin-left: 15px;
   border: 1px solid var(--second-font-color);
   border-radius: 4px;
-  padding: 0.90rem 1rem;
+  padding: 0.9rem 1rem;
   line-height: 1;
   margin-top: 20px;
 }
@@ -417,7 +419,6 @@ canvas {
   width: 70%;
   padding-right: 35px;
 }
-
 
 .about_image {
   width: 30%;
@@ -478,7 +479,6 @@ canvas {
   align-items: center;
 }
 
-
 .experience_block_button {
   width: 25%;
   padding-right: 15px;
@@ -515,7 +515,6 @@ canvas {
   background: #282b30;
   color: var(--second-font-color);
 }
-
 
 .experience_block_inner {
   width: 75%;
@@ -556,8 +555,8 @@ canvas {
   width: 80%;
 }
 
-.works {}
-
+.works {
+}
 
 .work {
   margin-bottom: 100px;
@@ -596,7 +595,6 @@ canvas {
   grid-area: 1 / 1 / -1 / 7;
 }
 
-
 .file_github_diret_link {
   display: flex;
   align-items: center;
@@ -607,7 +605,7 @@ canvas {
   color: rgb(255 255 255 / 92%);
   font-size: 24px;
   font-weight: 700;
-  transition: .3s;
+  transition: 0.3s;
   margin: 0px 0px 25px;
 }
 
@@ -621,7 +619,7 @@ canvas {
   background: hsl(240deg 2.97% 19.8%);
   font-size: 18px;
   line-height: 1.4;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 .exe_project {
@@ -648,7 +646,7 @@ canvas {
   /* cursor: pointer; */
 }
 
-.work:hover>.title_project {
+.work:hover > .title_project {
   color: var(--second-font-color);
 }
 
@@ -712,13 +710,12 @@ canvas {
   line-height: 1.4;
 }
 
-
 .work_detail_des ul {
   padding-left: 20px;
 }
 
 .work_detail_des ul li {
-  list-style-type: circle
+  list-style-type: circle;
 }
 
 .work_detail_des img {
@@ -776,7 +773,7 @@ canvas {
   padding: 14px 0;
   color: var(--second-font-color);
   border-radius: 4px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .email-link:hover {
