@@ -1,0 +1,11 @@
+Model Information:
+* title:	ONE Robot Talking
+* source:	https://sketchfab.com/3d-models/one-robot-talking-c1910fb1743d4b31a739ce0651b7ba5b
+* author:	NarsunStudios (https://sketchfab.com/NarsunStudios)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "ONE Robot Talking" (https://sketchfab.com/3d-models/one-robot-talking-c1910fb1743d4b31a739ce0651b7ba5b) by NarsunStudios (https://sketchfab.com/NarsunStudios) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

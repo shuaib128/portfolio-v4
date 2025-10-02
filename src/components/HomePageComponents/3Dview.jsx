@@ -1,22 +1,32 @@
 import React, { Suspense, useRef, useEffect, useState } from "react";
 import { a, useTransition } from "@react-spring/web";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useGLTF, useProgress, useAnimations, Center } from "@react-three/drei";
+import { OrbitControls, useGLTF, useProgress, useAnimations, Center, Environment } from "@react-three/drei";
 import { motion } from "framer-motion";
 import { Section } from "./Section";
 import * as THREE from "three";
+import AnimatedTxt from "../AnimatedTxt/AnimatedTxt";
 
 function Model(props) {
   // Load the GLB with animations
   const { scene, animations } = useGLTF("/Models/scene.glb");
   const { actions } = useAnimations(animations, scene);
+  const [segment, setSegment] = useState("middle");
 
   useEffect(() => {
     if (actions && Object.keys(actions).length > 0) {
       const firstAction = actions[Object.keys(actions)[0]];
       firstAction.reset().play(); // play first animation
     }
-  }, [actions]);
+
+    // Fix texture encoding so colors aren’t washed out/dark
+    scene.traverse((child) => {
+      if (child.isMesh && child.material && child.material.map) {
+        child.material.map.encoding = THREE.sRGBEncoding;
+        child.material.needsUpdate = true;
+      }
+    });
+  }, [actions, scene]);
 
   return <primitive object={scene} scale={[0.5, 0.5, 0.5]} {...props} />;
 }
@@ -49,21 +59,13 @@ const Loader = () => {
 
 const Lights = () => (
   <>
-    <ambientLight intensity={0.3} />
-    <directionalLight position={[100, 10, 5]} intensity={1} />
-    <directionalLight
-      castShadow
-      position={[0, 10, 0]}
-      intensity={1.5}
-      shadow-mapSize-width={1024}
-      shadow-mapSize-height={1024}
-      shadow-camera-far={50}
-      shadow-camera-left={-10}
-      shadow-camera-right={10}
-      shadow-camera-top={10}
-      shadow-camera-bottom={-10}
-    />
-    <spotLight intensity={1} position={[1000, 0, 0]} castShadow />
+    {/* Brighter ambient + hemisphere light for natural fill */}
+    <ambientLight intensity={1} />
+    <hemisphereLight skyColor={"#ffffff"} groundColor={"#444444"} intensity={0.8} />
+
+    {/* Directional lights closer to model */}
+    <directionalLight position={[5, 5, 5]} intensity={2} />
+    <spotLight intensity={1.5} position={[10, 10, 10]} castShadow />
   </>
 );
 
@@ -78,7 +80,6 @@ const HTMLContent = () => {
 
   useFrame(() => {
     if (!isInteracting && controls.current) {
-      // Lerp back to original position + target
       controls.current.target.lerp(homeTarget, 0.05);
       controls.current.object.position.lerp(homePosition, 0.05);
       controls.current.update();
@@ -107,7 +108,6 @@ const HTMLContent = () => {
   );
 };
 
-
 const CanvasView = () => (
   <div className="canvsView">
     <motion.div
@@ -117,12 +117,25 @@ const CanvasView = () => (
       transition={{ delay: 1.5, duration: 0.5, type: "just", stiffness: 120 }}
     >
       <Loader />
-      <Canvas camera={{ position: [0, 0, 130], fov: 70 }}>
+      <Canvas
+        camera={{ position: [0, 0, 130], fov: 70 }}
+        gl={{ outputEncoding: THREE.sRGBEncoding }}
+      >
         <Lights />
         <Suspense fallback={null}>
           <HTMLContent />
+          {/* Add global realistic lighting */}
+          <Environment preset="sunset" />
         </Suspense>
       </Canvas>
+    </motion.div>
+
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 1.7, duration: 0.5, type: "just", stiffness: 120 }}
+    >
+      <AnimatedTxt text="👋 Hi, I’m Sam’s AI. Want to know about Shuaib?" speed={80} />
     </motion.div>
 
     <motion.p

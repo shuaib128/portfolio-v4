@@ -86,7 +86,7 @@ a {
 .abouts_section {
   width: 100%;
   margin: 0px auto;
-  margin-top: 262px;
+  margin-top: 415px;
 }
 
 .header {
@@ -166,7 +166,7 @@ a {
   padding: 17px 20px;
   border-radius: 4px;
   text-align: center;
-  margin-top: 90px;
+  margin-top: 100px;
 }
 
 .about_me {
@@ -783,4 +783,35 @@ canvas {
 .dKThta svg:hover {
   color: #64ffda;
   fill: #64ffda;
+}
+
+.typewriter h1 {
+  color: #fff;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  margin: 0 15px;
+  display: block;
+  text-align: center;
+  white-space: normal; /* allow wrapping */
+}
+
+/* Blinking cursor */
+.cursor {
+  display: inline-block;
+  width: 2px; /* makes it a thin vertical bar */
+  height: 1em; /* matches text height */
+  background: var(--second-font-color); /* your chosen color */
+  margin-left: 2px;
+  animation: blink-caret 0.75s step-end infinite;
+  vertical-align: bottom; /* aligns with text baseline */
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
